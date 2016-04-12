@@ -79,7 +79,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
         var d = new Date();
-        $("#hour").text(((d.getHours() + 11) % 12) + 1);
+        $("#hour").text(( ((d.getHours() + 11) % 12) + 1) + " " + d.getMinutes() );
         window.setTimeout(function (){location.reload()},30000);
     </script>
   </body>
