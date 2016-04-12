@@ -79,7 +79,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
         var d = new Date();
-        $("#hour").text(d.getHours());
+        $("#hour").text(((d.getHours() + 11) % 12) + 1);
+        window.setTimeout(function (){location.reload()},30000);
     </script>
   </body>
 </html>
